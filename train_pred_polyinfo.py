@@ -44,7 +44,7 @@ def train_and_predict(data_path, model_path, preds_path, gpu=False):
     "--dataset_type", "regression",
     "--split_size", "0.95", "0.04", "0.01",
     "--metric", "mae",
-    "--arr_vtf","arr",
+
     "--quiet",
     "--depth", "2",
     "--dropout", "0",
@@ -68,7 +68,7 @@ def train_and_predict(data_path, model_path, preds_path, gpu=False):
         "--test_path", f"{TEST}",
         "--features_path", f"{TESTFEATS}",
         "--checkpoint_dir", f"{SAVEDIR}",
-        "--arr_vtf", "arr", 
+        
         "--preds_path", f"{PREDS}",
     ]
 
