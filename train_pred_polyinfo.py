@@ -27,7 +27,7 @@ def train_and_predict(data_path, model_path, preds_path, gpu=False):
         os.makedirs(data_path)
     if not os.path.exists(model_path):
         os.makedirs(model_path)
-    TRAIN = f"{data_path}/s_screen.csv"
+    TRAIN = f"{data_path}/s_full.csv"
     TRAINFEATS = f"{data_path}/f_full.csv"
 
     TEST = f"{data_path}/s_screen.csv"
