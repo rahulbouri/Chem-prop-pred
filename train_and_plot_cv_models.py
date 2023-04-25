@@ -47,7 +47,7 @@ def make_training_predictions(data_path, model_path, gpu=False):
                 "--save_dir", f"{SAVEDIR}",
                 "--dataset_type", "regression",
                 "--metric", "mae",
-                
+                "--arr_vtf", "arr",
                 "--quiet",
                 "--depth", "3",
                 "--dropout", "0.15",
@@ -77,7 +77,7 @@ def make_training_predictions(data_path, model_path, gpu=False):
                 "--test_path", f"{TRAIN_FULL}",
                 "--features_path", f"{TRAINFEATS_FULL}",
                 "--checkpoint_dir", f"{SAVEDIR}",
-                
+                "--arr_vtf", "arr", 
                 "--preds_path", f"{PREDS}",
             ]
 
